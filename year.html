@@ -30,6 +30,20 @@ loadYearTemplate(async () => {
     // 4. Render the page
     renderYearPage(data.yearName, subjects);
 });
+
+import { loadLessons } from './engine.js'
+
+async function init() {
+const params = new URLSearchParams(window.location.search)
+const year = params.get('year')
+const subject = params.get('subject')
+
+const lessons = await loadLessons(year, subject)
+
+console.log('Loaded lessons:', lessons)
+}
+
+init()
 </script>
 
 </body>

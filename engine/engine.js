@@ -383,4 +383,23 @@ async function testSupabase() {
   }
   
   testSupabase()
+
+
+  export async function loadLessons(year, subject) {
+    const { data, error } = await supabase
+      .from('lessons')
+      .select('*')
+      .eq('year', year)
+      .eq('subject', subject)
+      .order('order_index', { ascending: true })
   
+    if (error) {
+      console.error('Supabase error:', error)
+      return []
+    }
+  
+    return data
+  }
+
+
+

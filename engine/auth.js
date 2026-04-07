@@ -1,3 +1,7 @@
+
+import { supabase } from './supabase.js'
+
+
 auth.onAuthStateChanged(user => {
   if (!user && window.location.pathname.includes("lesson"))
     window.location.href = "../login.html";

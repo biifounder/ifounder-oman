@@ -17,5 +17,48 @@
 <script type="module" src="engine/engine.js"></script>
 
 
+
+<script type="module">
+    import { supabase } from './engine/supabase.js'
+    
+    async function loadSubjects() {
+      const { data, error } = await supabase
+        .from('subjects')
+        .select('*')
+        .order('year')
+        .order('order_index')
+    
+      if (error) {
+        console.error(error)
+        return
+      }
+    
+      const container = document.body
+    
+      let currentYear = null
+    
+      data.forEach(sub => {
+        if (sub.year !== currentYear) {
+          currentYear = sub.year
+          const h2 = document.createElement('h2')
+          h2.textContent = `Year ${sub.year}`
+          container.appendChild(h2)
+        }
+    
+        const btn = document.createElement('button')
+        btn.textContent = sub.name
+        btn.onclick = () => {
+          location.href = `year.html?year=${sub.year}&subject=${sub.name}`
+        }
+        container.appendChild(btn)
+      })
+    }
+    
+    loadSubjects()
+    </script>
+    
+
+
+
 </body>
 </html>
