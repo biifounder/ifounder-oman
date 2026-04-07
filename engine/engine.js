@@ -1,4 +1,6 @@
 
+import { supabase } from './supabase.js'
+
 
 // -------------------------
 // SHARED TEMPLATE LOADER
@@ -373,3 +375,12 @@ function loadLessonData(lessonId) {
             console.error("Error loading lesson JSON:", err);
         });
 }
+
+
+async function testSupabase() {
+    const { data, error } = await supabase.from('test_table').select('*')
+    console.log('TEST:', data, error)
+  }
+  
+  testSupabase()
+  
