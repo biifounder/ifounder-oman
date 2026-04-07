@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Year</title>
+<link rel="stylesheet" href="../../engine/style.css">
+<script src="../../engine/engine.js"></script>
+</head>
+
+<body>
+
+<script>
+// 1. Load the year template
+loadYearTemplate(async () => {
+
+    // 2. Load JSON data for this year
+    const params = new URLSearchParams(location.search);
+    const dataPath = params.get("path");
+
+    const response = await fetch(dataPath);
+    const data = await response.json();
+
+
+    // 3. Convert subject paths to the universal subject.html
+    const subjects = data.subjects.map(sub => ({
+        name: sub.name,
+        path: `../../subject.html?path=${sub.path}`
+    }));
+
+    // 4. Render the page
+    renderYearPage(data.yearName, subjects);
+});
+</script>
+
+</body>
+</html>

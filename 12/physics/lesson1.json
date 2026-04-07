@@ -1,0 +1,79 @@
+{
+  "title": "Density",
+  "groups": [
+    {
+      "mark": 0,
+      "flag": 0,
+      "questions": [
+        {
+          "q": "A block has mass 200 g and volume 50 cm³. What is its density?",
+          "choices": ["2 g/cm³", "4 g/cm³", "0.25 g/cm³"],
+          "answer": 0,
+          "hint": "Density = mass ÷ volume"
+        },
+        {
+          "q": "A rock has mass 600 g and volume 300 cm³. Find its density?",
+          "choices": ["1 g/cm³", "2 g/cm³", "3 g/cm³"],
+          "answer": 1,
+          "hint": "Use density = m ÷ V"
+        },
+        {
+          "q": "A metal cube has mass 900 g and volume 300 cm³. Density?",
+          "choices": ["1 g/cm³", "2 g/cm³", "3 g/cm³"],
+          "answer": 2,
+          "hint": "Divide mass by volume"
+        }
+      ]
+    },
+
+    {
+      "mark": 0,
+      "flag": 0,
+      "questions": [
+        {
+          "q": "A force of 20 N acts on an object causing acceleration of 4 m/s². What is the mass?",
+          "choices": ["2 kg", "4 kg", "5 kg"],
+          "answer": 2,
+          "hint": "Use F = m × a"
+        },
+        {
+          "q": "A 10 N force accelerates an object at 2 m/s². Mass?",
+          "choices": ["2 kg", "3 kg", "5 kg"],
+          "answer": 0,
+          "hint": "m = F ÷ a"
+        },
+        {
+          "q": "A 30 N force acts on a mass producing acceleration of 6 m/s². Mass?",
+          "choices": ["3 kg", "4 kg", "5 kg"],
+          "answer": 0,
+          "hint": "Mass = Force ÷ acceleration"
+        }
+      ]
+    },
+
+    {
+      "mark": 0,
+      "flag": 0,
+      "questions": [
+        {
+          "q": "A 2 kg object is lifted 5 m. GPE gained? (g = 10)",
+          "choices": ["50 J", "100 J", "150 J"],
+          "answer": 1,
+          "hint": "GPE = mgh"
+        },
+        {
+          "q": "A 3 kg object is raised 4 m. GPE gained? (g = 10)",
+          "choices": ["80 J", "100 J", "120 J"],
+          "answer": 2,
+          "hint": "m × g × h"
+        },
+        {
+          "q": "A 1 kg object is lifted 10 m. GPE gained? (g = 10)",
+          "choices": ["50 J", "100 J", "150 J"],
+          "answer": 1,
+          "hint": "GPE = mgh"
+        }
+      ]
+    }
+  ]
+}

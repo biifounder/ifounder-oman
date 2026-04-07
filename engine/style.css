@@ -1,0 +1,221 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: #f5f5f5;
+}
+
+h1, h2 {
+    margin-bottom: 10px;
+}
+
+#filter-box {
+    margin-bottom: 20px;
+}
+
+.question-box {
+    background: white;
+    padding: 15px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px #ccc;
+    position: relative;
+}
+
+.flag-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: gold;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.flag-off {
+    background: #ddd;
+}
+
+.mark-indicator {
+    position: absolute;
+    top: 10px;
+    right: 60px;
+    font-size: 20px;
+}
+
+.choice-btn {
+    display: block;
+    width: 100%;
+    margin: 6px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background: #e0e0e0;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: left;
+}
+
+.choice-btn.correct {
+    background: #4CAF50;
+    color: white;
+}
+
+.choice-btn.wrong {
+    background: #d9534f;
+    color: white;
+}
+
+.choice-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.hint {
+    margin-top: 10px;
+    font-style: italic;
+    color: #444;
+}
+
+.try-btn {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: #0275d8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Dashboard / lesson cards (for later use) */
+.lesson-card {
+    background: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 4px #ccc;
+}
+
+.lesson-card h3 {
+    margin-top: 0;
+}
+
+.lesson-card a {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 6px 10px;
+    background: #0275d8;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+/* BUTTON MENU */
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.menu button {
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    background: #4a90e2;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.menu button:hover {
+    background: #357ab8;
+    transform: translateY(-2px);
+}
+
+.menu button:active {
+    transform: translateY(0);
+}
+
+/* OPTIONAL: BACK BUTTON */
+.back-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background: #777;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.back-btn:hover {
+    background: #555;
+}
+
+#lessons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 300px;
+    margin: 20px auto;
+}
+
+.menu-btn {
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    background: #4a90e2;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.menu-btn:hover {
+    background: #357ab8;
+    transform: translateY(-2px);
+}
+
+
+#subjects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 300px;
+    margin: 20px auto;
+}
+
+.menu-btn {
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    background: #4a90e2;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.menu-btn:hover {
+    background: #357ab8;
+    transform: translateY(-2px);
+}
+
+.unit-heading {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #333;
+    text-align: center;
+}
+#units-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+

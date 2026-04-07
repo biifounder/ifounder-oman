@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Subject</title>
+<link rel="stylesheet" href="engine/style.css">
+<script src="engine/engine.js"></script>
+</head>
+
+<body>
+
+<script>
+// 1. Read ?path=... from URL
+const params = new URLSearchParams(location.search);
+const dataPath = params.get("path");   // e.g. "12/physics/content.json"
+
+
+// 2. Load template
+loadSubjectTemplate(async () => {
+
+    // 3. Load JSON data
+    const response = await fetch(dataPath);
+    const data = await response.json();
+
+    // 4. Render using your engine function
+    renderSubjectPage(data.subjectName, data.units, data.basePath);
+
+});
+</script>
+
+</body>
+</html>

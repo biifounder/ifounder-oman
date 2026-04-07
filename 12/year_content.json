@@ -1,0 +1,7 @@
+{
+    "yearName": "Year 12",
+    "subjects": [
+        { "name": "Physics", "path": "12/physics/subject_content.json" },
+        { "name": "Chemistry", "path": "12/chemistry/subject_content.json" }
+    ]
+}

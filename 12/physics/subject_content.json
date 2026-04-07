@@ -1,0 +1,20 @@
+{
+    "subjectName": "Physics",
+    "basePath": "12/physics/",
+    "units": [
+        {
+            "name": "Unit 1: Mechanics",
+            "lessons": [
+                { "id": 1, "title": "Lesson 1" },
+                { "id": 2, "title": "Lesson 2" }
+            ]
+        },
+        {
+            "name": "Unit 2: Electricity",
+            "lessons": [
+                { "id": 3, "title": "Lesson 3" },
+                { "id": 4, "title": "Lesson 4" }
+            ]
+        }
+    ]
+}
